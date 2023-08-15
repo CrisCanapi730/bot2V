@@ -12,6 +12,9 @@ formSaludo.addEventListener("submit", (event) => {
   const nombre = nombreIn.value;
   const sexo = generoSelec.value;
   const edad = edadIn.value;
+  let fechaActual = new Date();
+  let horaActual = fechaActual.getHours();
 
-  saludoDiv.innerHTML = "<p>" + saludar(nombre, sexo, edad) + "</p>";
+
+  saludoDiv.innerHTML = "<p>" + saludar(nombre, sexo, edad, horaActual) + "</p>";
 })
