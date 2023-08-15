@@ -2,8 +2,13 @@
   <body>
     <h2>Cristian Said Canapi Madrid</h2>
     <h1>Bot Saludador</h1>
-    <p>Hola</p>
-
+    <form id="saludo-form">
+      <label for="nombre">Nombre:  </label>
+    
+      <input type="text" id="nombre" placeholder="Ingresa tu nombre"/>
+      <button type="submit">Saludar</button>
+    </form>
+    <div id="saludo-div"></div>
     <script type="module" src="./src/presenter.js"></script>
   </body>
 </html>
